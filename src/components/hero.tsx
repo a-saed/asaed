@@ -4,13 +4,13 @@ export function Hero() {
   return (
     <div className="py-14">
       <h1 className="text-2xl font-bold text-white tracking-tight leading-snug mb-4">
-        Full-stack engineer.
+        Full-stack engineer obsessed with maps,
         <br />
-        <span className="text-neutral-500">I build things and write about them.</span>
+        <span className="text-neutral-500">clean abstractions, and why things work.</span>
       </h1>
       <p className="text-sm text-neutral-400 leading-relaxed max-w-md">
-        I work at GeoTech building GIS-driven applications. Outside of work I ship side projects
-        and write about what I learn along the way.
+        I ship things, break them, fix them, then write about it.
+        Also: books, chess, and an unreasonable amount of music theory.
       </p>
       <div className="flex gap-4 mt-6">
         <a
