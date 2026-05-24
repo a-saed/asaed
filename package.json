@@ -30,5 +30,8 @@
   },
   "devDependencies": {
     "@types/node": "^20.19.41"
+  },
+  "engines": {
+    "node": "20.x"
   }
 }
