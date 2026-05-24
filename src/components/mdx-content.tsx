@@ -7,12 +7,12 @@ interface MDXContentProps {
   code: string
 }
 
-function useMDXComponent(code: string) {
+function getMDXComponent(code: string) {
   const fn = new Function(code)
   return fn({ ...runtime }).default
 }
 
 export function MDXContent({ code }: MDXContentProps) {
-  const Component = useMemo(() => useMDXComponent(code), [code])
+  const Component = useMemo(() => getMDXComponent(code), [code])
   return <Component />
 }
