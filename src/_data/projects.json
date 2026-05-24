@@ -1,55 +1,47 @@
 [
   {
     "id": "1",
-    "title": "UFD",
-    "desciption": "ur-fav-downloader, an app where you can download videos from popular platforms",
-    "tools": ["Next.js", "MUI", "youtube-dl", "ffmpeg"],
+    "title": "Navigo",
+    "description": "Delivery telematics platform with real-time tracking and route optimization for logistics operations.",
+    "tools": ["Next.js", "TypeScript"],
     "repo": "",
-    "url": ""
+    "url": "",
+    "featured": true
   },
   {
     "id": "2",
-    "title": "FutureMe",
-    "desciption": "an app where a user can send a message to their future self in a particular date",
-    "tools": [
-      "Next.js",
-      "nodeJS",
-      "MongoDB",
-      "mongoose",
-      "nodemailer",
-      "Bull",
-      "Redis"
-    ],
+    "title": "Toder",
+    "description": "All-in-one task management with project hierarchy and drag-and-drop task organization.",
+    "tools": ["React", "TypeScript", "Vite", "PouchDB"],
     "repo": "",
-    "url": ""
+    "url": "",
+    "featured": true
   },
   {
     "id": "3",
-    "title": "Toder",
-    "desciption": "All-In-one task management system that makes organizing projects with related tasks much easier",
-    "tools": ["ReactJS", "TypeScript", "Vite", "pouchDB", "React-dnd"],
+    "title": "FutureMe",
+    "description": "Send a letter to your future self — scheduled email delivery on any date you choose.",
+    "tools": ["Next.js", "Node.js", "MongoDB", "Bull", "Redis"],
     "repo": "",
-    "url": ""
+    "url": "",
+    "featured": true
   },
   {
     "id": "4",
     "title": "linkedin-dl",
-    "desciption": "command line tool to download coursed from linkedin-learning platform",
-    "tools": ["Next.js", "MUI", "youtube-dl", "ffmpeg"],
+    "description": "CLI tool to download courses from LinkedIn Learning for offline viewing.",
+    "tools": ["Python", "ffmpeg"],
     "repo": "https://github.com/AbdoElsaed/linkedin-dl",
-    "url": ""
+    "url": "",
+    "featured": true
   },
   {
     "id": "5",
-    "title": "Nagda",
-    "desciption": "..."
-  },
-  {
-    "id": "6",
-    "title": "Navigo",
-    "desciption": "Navigo elevates delivery management through advanced telematics, offering real-time tracking and control over logistics. Our platform enhances operational efficiency and customer satisfaction, allowing businesses to monitor shipments from start to finish with precision. Experience transformative delivery tracking with Navigo, where every route is optimized for success.",
-    "tools": ["Next.js"],
+    "title": "UFD",
+    "description": "Download videos from popular platforms via a clean web interface.",
+    "tools": ["Next.js", "MUI", "youtube-dl", "ffmpeg"],
     "repo": "",
-    "url": ""
+    "url": "",
+    "featured": false
   }
 ]
