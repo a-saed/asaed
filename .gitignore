@@ -36,3 +36,9 @@ next-env.d.ts
 
 # contentlayer
 .contentlayer
+
+# Velite generated output
+.velite/
+
+# Brainstorming sessions
+.superpowers/
