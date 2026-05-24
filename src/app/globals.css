@@ -27,7 +27,7 @@
 }
 
 /* rehype-pretty-code code block styles */
-[data-rehype-pretty-code-fragment] {
+[data-rehype-pretty-code-figure] {
   position: relative;
 }
 
