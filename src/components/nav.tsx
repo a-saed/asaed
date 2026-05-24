@@ -1,14 +1,12 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { social } from '@/_data/social'
 
 export function Nav() {
   return (
-    <nav className="flex items-center justify-between py-7">
-      <Link
-        href="/"
-        className="text-sm font-medium text-white hover:text-neutral-300 transition-colors"
-      >
-        Abdulrhman Elsaed
+    <nav className="flex items-center justify-between py-5">
+      <Link href="/" className="opacity-90 hover:opacity-100 transition-opacity">
+        <Image src="/logo.png" width={52} height={52} alt="asaed logo" priority />
       </Link>
       <div className="flex items-center gap-5">
         <Link href="/writing" className="text-sm text-neutral-500 hover:text-neutral-300 transition-colors">

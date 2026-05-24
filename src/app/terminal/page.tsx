@@ -28,40 +28,39 @@ const TerminalPage = () => {
   };
 
   return (
-    <div>
-      <Terminal
-        ref={terminal}
-        commands={commands}
-        welcomeMessage={[
-          "welcome to terminal mode of asaed portfolio",
-          "type 'help' to get a list of available commands",
-        ]}
-        promptLabel={"asaed@portfolio"}
-        autoFocus
-        style={{
-          backgroundColor: "#111",
-          minHeight: "30vh",
-          maxHeight: "70vh",
-          overflow: "auto",
-          height: "100%",
-          width: "100%",
-        }}
-        styleEchoBack="fullInherit"
-        contentStyle={{
-          color: "#ffb86c",
-          fontWeight: "normal",
-          paddingLeft: null,
-        }} // Text colour
-        promptLabelStyle={{ color: "#ff5555", fontWeight: "normal" }}
-        inputTextStyle={{ color: "#f1fa8c", fontWeight: "normal" }}
-        messageStyle={{
-          color: "#8be9fd",
-          fontWeight: "normal",
-          paddingLeft: null,
-        }}
-        scrollBehavior="auto"
-        // noDefaults
-      />
+    <div className="min-h-screen bg-[#0a0a0a] flex flex-col">
+      <div className="flex-1 max-w-[680px] w-full mx-auto px-6 py-12 flex flex-col">
+        <p className="font-mono text-xs text-neutral-600 mb-4">
+          <a href="/" className="hover:text-neutral-400 transition-colors">← back</a>
+        </p>
+        <Terminal
+          ref={terminal}
+          commands={commands}
+          welcomeMessage={[
+            "welcome to terminal mode of asaed portfolio",
+            "type 'help' to get a list of available commands",
+          ]}
+          promptLabel={"asaed@portfolio:~$"}
+          autoFocus
+          style={{
+            backgroundColor: "#111",
+            border: "1px solid #1e1e1e",
+            borderRadius: "6px",
+            minHeight: "60vh",
+            flex: 1,
+            overflow: "auto",
+            fontFamily: "var(--font-geist-mono), ui-monospace, monospace",
+            fontSize: "13px",
+            lineHeight: "1.6",
+          }}
+          styleEchoBack="fullInherit"
+          contentStyle={{ color: "#ffb86c", fontWeight: "normal" }}
+          promptLabelStyle={{ color: "#ff5555", fontWeight: "normal" }}
+          inputTextStyle={{ color: "#f1fa8c", fontWeight: "normal" }}
+          messageStyle={{ color: "#8be9fd", fontWeight: "normal" }}
+          scrollBehavior="auto"
+        />
+      </div>
     </div>
   );
 };
