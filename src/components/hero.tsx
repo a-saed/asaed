@@ -4,14 +4,10 @@ export function Hero() {
   return (
     <div className="py-14">
       <h1 className="text-2xl font-bold text-white tracking-tight leading-snug mb-4">
-        I build GIS software —
+        I make maps do things they weren&apos;t supposed to.
         <br />
-        <span className="text-neutral-500">turning messy coordinates into products people actually use.</span>
+        <span className="text-neutral-500">Full-stack engineer, occasional writer, always debugging something.</span>
       </h1>
-      <p className="text-sm text-neutral-400 leading-relaxed max-w-md">
-        I still google basic things, and I write here when something takes too long to figure out
-        so the next person doesn&apos;t have to.
-      </p>
       <div className="flex gap-4 mt-6">
         <a
           href={social.github}
