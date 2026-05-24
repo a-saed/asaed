@@ -1,47 +1,47 @@
 [
   {
     "id": "1",
-    "title": "Navigo",
-    "description": "Delivery telematics platform with real-time tracking and route optimization for logistics operations.",
-    "tools": ["Next.js", "TypeScript"],
-    "repo": "",
+    "title": "Butterfly Drop",
+    "description": "P2P file sharing via WebRTC — no cloud, no account, no middleman. Files go directly device to device.",
+    "tools": ["React", "TypeScript", "WebRTC", "Node.js"],
+    "repo": "https://github.com/a-saed/ButterflyDrop",
     "url": "",
     "featured": true
   },
   {
     "id": "2",
-    "title": "Toder",
-    "description": "All-in-one task management with project hierarchy and drag-and-drop task organization.",
-    "tools": ["React", "TypeScript", "Vite", "PouchDB"],
-    "repo": "",
+    "title": "Orb",
+    "description": "A 3D spatial browser where tabs float in space instead of a bar. Built with Go and Three.js, no Electron.",
+    "tools": ["Go", "React", "Three.js", "TypeScript"],
+    "repo": "https://github.com/a-saed/orb",
     "url": "",
     "featured": true
   },
   {
     "id": "3",
-    "title": "FutureMe",
-    "description": "Send a letter to your future self — scheduled email delivery on any date you choose.",
-    "tools": ["Next.js", "Node.js", "MongoDB", "Bull", "Redis"],
-    "repo": "",
-    "url": "",
+    "title": "react-ol-choropleth",
+    "description": "React component library for interactive choropleth maps using OpenLayers. Customizable color scales, tooltips, and legends.",
+    "tools": ["React", "TypeScript", "OpenLayers", "Chroma.js"],
+    "repo": "https://github.com/AbdoElsaed/react-ol-choropleth",
+    "url": "https://abdoelsaed.github.io/react-ol-choropleth/",
     "featured": true
   },
   {
     "id": "4",
-    "title": "linkedin-dl",
-    "description": "CLI tool to download courses from LinkedIn Learning for offline viewing.",
-    "tools": ["Python", "ffmpeg"],
-    "repo": "https://github.com/AbdoElsaed/linkedin-dl",
-    "url": "",
+    "title": "Uplnk",
+    "description": "Framework-agnostic file upload primitive. Progress reporting, smart retries, batch operations. Works with S3, GCP, Azure — or anything.",
+    "tools": ["TypeScript"],
+    "repo": "https://github.com/a-saed/uplnk",
+    "url": "https://a-saed.github.io/uplnk/",
     "featured": true
   },
   {
     "id": "5",
-    "title": "UFD",
-    "description": "Download videos from popular platforms via a clean web interface.",
-    "tools": ["Next.js", "MUI", "youtube-dl", "ffmpeg"],
-    "repo": "",
+    "title": "Vasuala",
+    "description": "Real-time music visualizer for live performance. Audio maps to 40+ cinematic scenes via raymarching, GPU particles, and GLSL shaders.",
+    "tools": ["React", "Three.js", "GLSL", "Web Audio API"],
+    "repo": "https://github.com/a-saed/vasuala",
     "url": "",
-    "featured": false
+    "featured": true
   }
 ]
