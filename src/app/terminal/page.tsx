@@ -8,22 +8,74 @@ import { openNewLink } from "@/utils/general.util";
 const TerminalPage = () => {
   const terminal = useRef(null);
   const router = useRouter();
+
   const commands = {
+    whoami: {
+      description: "who is asaed?",
+      usage: "whoami",
+      fn: () =>
+        "Abdulrhman Elsaed — full-stack engineer building GIS software.\nI turn messy coordinates into products people actually use.\nI write here when something takes too long to figure out.",
+    },
+    projects: {
+      description: "list my projects",
+      usage: "projects",
+      fn: () =>
+        [
+          "Navigo       — delivery telematics platform with real-time tracking",
+          "Toder        — task management with drag-and-drop project hierarchy",
+          "FutureMe     — send a letter to your future self via scheduled email",
+          "linkedin-dl  — CLI to download LinkedIn Learning courses offline",
+        ].join("\n"),
+    },
+    writing: {
+      description: "list my articles",
+      usage: "writing",
+      fn: () => {
+        router.push("/writing");
+        return "opening /writing...";
+      },
+    },
     github: {
       description: "open my github profile",
       usage: "github",
-      fn: () => openNewLink("https://github.com/AbdoElsaed", "_blank"),
+      fn: () => {
+        openNewLink("https://github.com/a-saed", "_blank");
+        return "opening github...";
+      },
     },
     resume: {
-      description: "open my resume document",
+      description: "open my resume",
       usage: "resume",
-      fn: () =>
-        openNewLink(process.env.NEXT_PUBLIC_RESUME_LINK as string, "_blank"),
+      fn: () => {
+        openNewLink(process.env.NEXT_PUBLIC_RESUME_LINK as string, "_blank");
+        return "opening resume...";
+      },
     },
     home: {
-      description: "Return to the portfolio home page",
+      description: "go back to home",
       usage: "home",
-      fn: () => router.push("/"),
+      fn: () => {
+        router.push("/");
+        return "going home...";
+      },
+    },
+    contact: {
+      description: "how to reach me",
+      usage: "contact",
+      fn: () =>
+        "email  → abdulrhman.sa3ed@gmail.com\ngithub → https://github.com/a-saed",
+    },
+    stack: {
+      description: "my current tech stack",
+      usage: "stack",
+      fn: () =>
+        [
+          "languages  → TypeScript, Python, Go",
+          "frontend   → React, Next.js",
+          "backend    → Node.js, Go",
+          "data       → PostgreSQL, MongoDB, Redis",
+          "maps       → Leaflet, MapLibre, PostGIS",
+        ].join("\n"),
     },
   };
 
@@ -37,8 +89,7 @@ const TerminalPage = () => {
           ref={terminal}
           commands={commands}
           welcomeMessage={[
-            "welcome to terminal mode of asaed portfolio",
-            "type 'help' to get a list of available commands",
+            "asaed's terminal — type 'help' for available commands",
           ]}
           promptLabel={"asaed@portfolio:~$"}
           autoFocus
