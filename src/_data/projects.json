@@ -22,8 +22,8 @@
     "title": "react-ol-choropleth",
     "description": "React component library for interactive choropleth maps using OpenLayers. Customizable color scales, tooltips, and legends.",
     "tools": ["React", "TypeScript", "OpenLayers", "Chroma.js"],
-    "repo": "https://github.com/AbdoElsaed/react-ol-choropleth",
-    "url": "https://abdoelsaed.github.io/react-ol-choropleth/",
+    "repo": "https://github.com/a-saed/react-ol-choropleth",
+    "url": "https://a-saed.github.io/react-ol-choropleth/",
     "featured": true
   },
   {
