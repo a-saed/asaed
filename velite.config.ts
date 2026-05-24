@@ -23,7 +23,7 @@ export default defineConfig({
         })
         .transform((data) => ({
           ...data,
-          readingTime: Math.ceil((data.content.raw ?? '').split(/\s+/).length / 200),
+          readingTime: Math.ceil((data.content ?? '').split(/\s+/).length / 200),
           slugParam: data.slug.replace('blog/', ''),
           url: `/writing/${data.slug.replace('blog/', '')}`,
         })),
