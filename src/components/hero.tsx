@@ -2,7 +2,7 @@ import { social } from '@/_data/social'
 
 export function Hero() {
   return (
-    <div className="py-14">
+    <div className="py-10 sm:py-14">
       <h1 className="text-2xl font-bold text-white tracking-tight leading-snug mb-4">
         I make maps do things they weren&apos;t supposed to.
         <br />

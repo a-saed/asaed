@@ -30,9 +30,9 @@ export function WritingList({ limit }: WritingListProps) {
             href={post.hashnodeSlug ? `https://apdoelsaed.hashnode.dev/${post.hashnodeSlug}` : post.url}
             target={post.hashnodeSlug ? '_blank' : undefined}
             rel={post.hashnodeSlug ? 'noopener noreferrer' : undefined}
-            className="flex justify-between items-baseline py-3 group"
+            className="flex justify-between items-baseline py-3 group gap-3"
           >
-            <span className="text-sm text-neutral-300 group-hover:text-white transition-colors">
+            <span className="text-sm text-neutral-300 group-hover:text-white transition-colors min-w-0">
               {post.title}
             </span>
             <div className="flex items-center gap-3 shrink-0 ml-4">

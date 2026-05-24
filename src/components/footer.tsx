@@ -4,7 +4,7 @@ import { social } from '@/_data/social'
 export function Footer() {
   return (
     <footer className="py-10 mt-16 border-t border-neutral-900">
-      <div className="flex items-center justify-between">
+      <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
         <div className="flex gap-5">
           <a
             href={social.github}
