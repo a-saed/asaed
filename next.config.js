@@ -4,12 +4,12 @@ const nextConfig = {
   async redirects() {
     return [
       {
-        source: '/blog/:slug',
-        destination: '/writing/:slug',
+        source: "/blog/:slug",
+        destination: "/writing/:slug",
         permanent: true,
       },
-    ]
+    ];
   },
-}
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;

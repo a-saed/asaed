@@ -5,7 +5,7 @@
     "description": "P2P file sharing via WebRTC — no cloud, no account, no middleman. Files go directly device to device.",
     "tools": ["React", "TypeScript", "WebRTC", "Node.js"],
     "repo": "https://github.com/a-saed/ButterflyDrop",
-    "url": "",
+    "url": "https://butterfly-drop.vercel.app",
     "featured": true
   },
   {
