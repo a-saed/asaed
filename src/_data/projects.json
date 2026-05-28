@@ -36,6 +36,15 @@
     "featured": true
   },
   {
+    "id": "6",
+    "title": "Datum",
+    "description": "Local-first spatial sync for PostGIS. A bounding box is a live subscription — query your data locally in WASM, sync over WebSocket.",
+    "tools": ["TypeScript", "PostGIS", "WebSocket", "WASM"],
+    "repo": "https://github.com/a-saed/datum",
+    "url": "https://a-saed.github.io/datum/",
+    "featured": true
+  },
+  {
     "id": "5",
     "title": "Vasuala",
     "description": "Real-time music visualizer for live performance. Audio maps to 40+ cinematic scenes via raymarching, GPU particles, and GLSL shaders.",
