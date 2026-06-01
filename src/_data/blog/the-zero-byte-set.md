@@ -1,6 +1,6 @@
 ---
 title: "The Zero-Byte Set: What an Easy Go Problem Taught Me About Memory"
-date: 2026-05-29
+date: 2026-06-01
 description: I solved Contains Duplicate in Go and fell down a rabbit hole into how the language represents nothing — and came out understanding memory better than years of writing JavaScript ever managed.
 tags: [go, memory, data-structures, learning]
 ---
