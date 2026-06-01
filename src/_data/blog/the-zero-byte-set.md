@@ -159,5 +159,3 @@ The code is eight lines. But under those eight lines:
 - **"Set" is a concept; in Go the tool is a map** with the values thrown away.
 
 This is why I'm doing NeetCode in a language I *don't* know instead of one I do. In JS, `new Set()` hides all of this. Go made me look at it. The "easy" problem wasn't the array — it was the excuse to finally understand what it means to store nothing.
-
-Next up: Two Sum — same map, but this time the value actually carries its weight. Funny how that's the perfect sequel.
