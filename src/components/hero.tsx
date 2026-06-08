@@ -4,9 +4,9 @@ export function Hero() {
   return (
     <div className="py-10 sm:py-14">
       <h1 className="text-2xl font-bold text-white tracking-tight leading-snug mb-4">
-        I make maps do things they weren&apos;t supposed to.
+        Engineer by trade, rabbit-hole enthusiast by nature.
         <br />
-        <span className="text-neutral-500">Full-stack engineer, occasional writer, always debugging something.</span>
+        <span className="text-neutral-500">I write here when something won&apos;t stop bothering me.</span>
       </h1>
       <div className="flex gap-4 mt-6">
         <a
