@@ -2,7 +2,9 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { GeistSans } from 'geist/font/sans'
 import { GeistMono } from 'geist/font/mono'
-import { SITE_URL } from '@/utils/site'
+import { SITE_URL, OG_VERSION } from '@/utils/site'
+
+const ogImage = `/og?v=${OG_VERSION}`
 
 const title = 'Abdulrhman Elsaed — Full-Stack Engineer'
 const description =
@@ -23,9 +25,10 @@ export const metadata: Metadata = {
     locale: 'en_US',
     images: [
       {
-        url: '/og',
+        url: ogImage,
         width: 1200,
         height: 630,
+        type: 'image/png',
         alt: title,
       },
     ],
@@ -34,7 +37,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title,
     description,
-    images: ['/og'],
+    images: [ogImage],
   },
 }
 

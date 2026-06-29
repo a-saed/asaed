@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { SITE_URL } from '@/utils/site'
+import { SITE_URL, OG_VERSION } from '@/utils/site'
 import { Nav } from '@/components/nav'
 import { Footer } from '@/components/footer'
 import { WritingList } from '@/components/writing-list'
@@ -7,6 +7,9 @@ import { WritingList } from '@/components/writing-list'
 const title = 'Writing — Abdulrhman Elsaed'
 const description =
   'Articles on software engineering and things I learn along the way.'
+const ogImage = `/og?title=Writing&sub=${encodeURIComponent(
+  'I write here when something won’t stop bothering me.'
+)}&v=${OG_VERSION}`
 
 export const metadata: Metadata = {
   title,
@@ -16,13 +19,13 @@ export const metadata: Metadata = {
     url: `${SITE_URL}/writing`,
     title,
     description,
-    images: ['/og?title=Writing&sub=I%20write%20here%20when%20something%20won%E2%80%99t%20stop%20bothering%20me.'],
+    images: [ogImage],
   },
   twitter: {
     card: 'summary_large_image',
     title,
     description,
-    images: ['/og?title=Writing&sub=I%20write%20here%20when%20something%20won%E2%80%99t%20stop%20bothering%20me.'],
+    images: [ogImage],
   },
 }
 
