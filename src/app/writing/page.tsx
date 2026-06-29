@@ -1,11 +1,29 @@
 import type { Metadata } from 'next'
+import { SITE_URL } from '@/utils/site'
 import { Nav } from '@/components/nav'
 import { Footer } from '@/components/footer'
 import { WritingList } from '@/components/writing-list'
 
+const title = 'Writing — Abdulrhman Elsaed'
+const description =
+  'Articles on software engineering and things I learn along the way.'
+
 export const metadata: Metadata = {
-  title: 'Writing — Abdulrhman Elsaed',
-  description: 'Articles on software engineering and things I learn along the way.',
+  title,
+  description,
+  openGraph: {
+    type: 'website',
+    url: `${SITE_URL}/writing`,
+    title,
+    description,
+    images: ['/og?title=Writing'],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title,
+    description,
+    images: ['/og?title=Writing'],
+  },
 }
 
 export default function WritingPage() {

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { notFound, redirect } from 'next/navigation'
 import { posts } from '@/.velite'
+import { SITE_URL } from '@/utils/site'
 import { Nav } from '@/components/nav'
 import { Footer } from '@/components/footer'
 import { MDXContent } from '@/components/mdx-content'
@@ -16,11 +17,23 @@ export function generateMetadata({
 }): Metadata {
   const post = posts.find((p) => p.slugParam === params.slug)
   if (!post) return {}
+  const url = `${SITE_URL}/writing/${post.slugParam}`
+  const ogImage = `/og?title=${encodeURIComponent(post.title)}`
   return {
     title: `${post.title} — Abdulrhman Elsaed`,
     description: post.description,
     openGraph: {
-      images: [`/og?title=${encodeURIComponent(post.title)}`],
+      type: 'article',
+      url,
+      title: post.title,
+      description: post.description,
+      images: [{ url: ogImage, width: 1200, height: 630, alt: post.title }],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: post.title,
+      description: post.description,
+      images: [ogImage],
     },
   }
 }

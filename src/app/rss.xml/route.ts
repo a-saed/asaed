@@ -1,7 +1,6 @@
 import { NextResponse } from 'next/server'
 import { posts } from '@/.velite'
-
-const SITE_URL = 'https://asaed.me'
+import { SITE_URL } from '@/utils/site'
 
 function escapeXml(str: string): string {
   return str

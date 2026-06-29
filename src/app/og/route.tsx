@@ -1,4 +1,5 @@
 import { ImageResponse } from 'next/og'
+import { SITE_HOST } from '@/utils/site'
 
 export const runtime = 'edge'
 
@@ -28,7 +29,7 @@ export function GET(request: Request) {
             marginBottom: '20px',
           }}
         >
-          asaed.me
+          {SITE_HOST}
         </div>
         <div
           style={{
