@@ -6,11 +6,12 @@ export const runtime = 'edge'
 // Brand accent — pulled from the teal "AE" monogram so the card reads as one piece.
 const ACCENT = '#2dd4bf'
 const ABOUT =
-  'Full-stack engineer & team lead. Backends in Go & Node.js, clean UIs in React, and open-source for fun.'
+  'Rabbit-hole enthusiast by nature. I write here when something won’t stop bothering me.'
 
 export function GET(request: Request) {
   const { searchParams } = new URL(request.url)
   const title = searchParams.get('title')
+  const subtitle = searchParams.get('sub')
   const logoSrc = new URL('/logo.png', request.url).href
 
   // Article card: the post title is the hero, with a small logo + name byline.
@@ -50,6 +51,19 @@ export function GET(request: Request) {
           >
             {title}
           </div>
+          {subtitle ? (
+            <div
+              style={{
+                color: '#a3a3a3',
+                fontSize: '26px',
+                lineHeight: 1.4,
+                marginTop: '20px',
+                maxWidth: '880px',
+              }}
+            >
+              {subtitle}
+            </div>
+          ) : null}
           <div
             style={{
               display: 'flex',

@@ -16,13 +16,13 @@ export const metadata: Metadata = {
     url: `${SITE_URL}/writing`,
     title,
     description,
-    images: ['/og?title=Writing'],
+    images: ['/og?title=Writing&sub=I%20write%20here%20when%20something%20won%E2%80%99t%20stop%20bothering%20me.'],
   },
   twitter: {
     card: 'summary_large_image',
     title,
     description,
-    images: ['/og?title=Writing'],
+    images: ['/og?title=Writing&sub=I%20write%20here%20when%20something%20won%E2%80%99t%20stop%20bothering%20me.'],
   },
 }
 
